@@ -64,6 +64,13 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     // Dispose of any resources that can be recreated.
   }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "TagLocation" {
+      let navigationController = segue.destinationViewController as! UINavigationController
+      
+    }
+  }
+
   func updateLabels() {
     if let location = location {
       latitudeLabel.text = String(format: "%.8f", location.coordinate.latitude)
