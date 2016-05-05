@@ -37,6 +37,7 @@ class LocationDetailsViewController: UITableViewController {
     location.placemark = placemark
 
     do {
+      print("Saving location \(location)")
       try managedObjectContext.save()
     } catch {
       fatalCoreDataError(error)
