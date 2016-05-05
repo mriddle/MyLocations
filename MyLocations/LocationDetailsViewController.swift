@@ -1,11 +1,3 @@
-//
-//  LocationDetailsViewController.swift
-//  MyLocations
-//
-//  Created by Matthew Riddle on 4/05/2016.
-//  Copyright © 2016 Matthew Riddle. All rights reserved.
-//
-
 import UIKit
 import CoreLocation
 
@@ -30,7 +22,11 @@ class LocationDetailsViewController: UITableViewController {
   @IBOutlet weak var dateLabel: UILabel!
 
   @IBAction func done() {
-    dismissViewControllerAnimated(true, completion: nil)
+    let hudView = HudView.hudInView(navigationController!.view, animated: true)
+    hudView.text = "Tagged"
+    afterDelay(0.6) {
+      self.dismissViewControllerAnimated(true, completion: nil)
+    }
   }
 
   @IBAction func cancel() {
@@ -60,6 +56,24 @@ class LocationDetailsViewController: UITableViewController {
     }
 
     dateLabel.text = formatDate(NSDate())
+
+    let gestureRecognizer = UITapGestureRecognizer(
+      target: self,
+      action: #selector(LocationDetailsViewController.hideKeyboard(_:))
+    )
+    gestureRecognizer.cancelsTouchesInView = false
+    tableView.addGestureRecognizer(gestureRecognizer)
+  }
+
+  func hideKeyboard(gestureRecognizer: UIGestureRecognizer) {
+    let point = gestureRecognizer.locationInView(tableView)
+    let indexPath = tableView.indexPathForRowAtPoint(point)
+
+    if indexPath != nil && indexPath!.section == 0 && indexPath!.row == 0 {
+      return
+    }
+
+    descriptionTextView.resignFirstResponder()
   }
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -82,6 +96,20 @@ class LocationDetailsViewController: UITableViewController {
       return addressLabel.frame.size.height + 20
     } else {
       return 44
+    }
+  }
+
+  override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    if indexPath.section == 0 || indexPath.section == 1 {
+      return indexPath
+    } else {
+      return nil
+    }
+  }
+
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    if indexPath.section == 0 && indexPath.row == 0 {
+      descriptionTextView.becomeFirstResponder()
     }
   }
 

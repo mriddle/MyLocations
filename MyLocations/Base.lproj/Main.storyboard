@@ -92,7 +92,7 @@
         <scene sceneID="S8L-2S-rIv">
             <objects>
                 <tableViewController id="6XX-k6-5LG" customClass="LocationDetailsViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qhV-Br-xhP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qhV-Br-xhP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -323,7 +323,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="wb9-cY-VXt" kind="unwind" identifier="PickedCategory" unwindAction="categoryPickerDidPickCategory:" id="QPx-sa-u1z"/>
+                                    <segue destination="wb9-cY-VXt" kind="unwind" identifier="PickedCategory" unwindAction="categoryPickerDidPickCategory:" id="1u5-4Q-Y5m"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

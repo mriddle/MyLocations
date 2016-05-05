@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A86C8E6D1CDB0C1F00C4B814 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C8E6C1CDB0C1F00C4B814 /* Functions.swift */; };
 		A8A22A3D1CD9D346008AB620 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A22A3C1CD9D346008AB620 /* LocationDetailsViewController.swift */; };
 		A8EA13461CD963410089EDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA13451CD963410089EDE7 /* AppDelegate.swift */; };
 		A8EA13481CD963410089EDE7 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA13471CD963410089EDE7 /* CurrentLocationViewController.swift */; };
@@ -15,9 +16,11 @@
 		A8EA134F1CD963410089EDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EA134E1CD963410089EDE7 /* Assets.xcassets */; };
 		A8EA13521CD963410089EDE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EA13501CD963410089EDE7 /* LaunchScreen.storyboard */; };
 		A8F17A631CDAD8BA00FE518E /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */; };
+		A8F17A651CDB006C00FE518E /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F17A641CDB006C00FE518E /* HudView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A86C8E6C1CDB0C1F00C4B814 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		A8A22A3C1CD9D346008AB620 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		A8EA13421CD963410089EDE7 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EA13451CD963410089EDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		A8EA13511CD963410089EDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8EA13531CD963410089EDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
+		A8F17A641CDB006C00FE518E /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,9 @@
 				A8EA13471CD963410089EDE7 /* CurrentLocationViewController.swift */,
 				A8EA13491CD963410089EDE7 /* SecondViewController.swift */,
 				A8A22A3C1CD9D346008AB620 /* LocationDetailsViewController.swift */,
+				A86C8E6C1CDB0C1F00C4B814 /* Functions.swift */,
 				A8EA134B1CD963410089EDE7 /* Main.storyboard */,
+				A8F17A641CDB006C00FE518E /* HudView.swift */,
 				A8EA134E1CD963410089EDE7 /* Assets.xcassets */,
 				A8EA13501CD963410089EDE7 /* LaunchScreen.storyboard */,
 				A8EA13531CD963410089EDE7 /* Info.plist */,
@@ -146,6 +152,8 @@
 			files = (
 				A8A22A3D1CD9D346008AB620 /* LocationDetailsViewController.swift in Sources */,
 				A8EA134A1CD963410089EDE7 /* SecondViewController.swift in Sources */,
+				A8F17A651CDB006C00FE518E /* HudView.swift in Sources */,
+				A86C8E6D1CDB0C1F00C4B814 /* Functions.swift in Sources */,
 				A8EA13461CD963410089EDE7 /* AppDelegate.swift in Sources */,
 				A8F17A631CDAD8BA00FE518E /* CategoryPickerViewController.swift in Sources */,
 				A8EA13481CD963410089EDE7 /* CurrentLocationViewController.swift in Sources */,
