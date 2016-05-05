@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -56,14 +56,6 @@
                                     <action selector="getLocation" destination="9pv-A4-QxB" eventType="touchUpInside" id="NWN-sR-3Nc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FNM-8S-xqv">
-                                <rect key="frame" x="116" y="250" width="88" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tag Location"/>
-                                <connections>
-                                    <segue destination="oUv-wA-ESU" kind="modal" identifier="TagLocaiton" id="kg8-Ey-CI9"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xwC-OA-Dcc">
                                 <rect key="frame" x="20" y="101" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -71,6 +63,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FNM-8S-xqv">
+                                <rect key="frame" x="116" y="250" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tag Location"/>
+                                <connections>
+                                    <segue destination="oUv-wA-ESU" kind="modal" identifier="TagLocation" id="kg8-Ey-CI9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -139,6 +139,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="DkT-g3-Ubw" kind="push" identifier="PickCategory" id="2jh-ag-oRE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -285,7 +288,7 @@
                         <outlet property="addressLabel" destination="zC7-wS-mAD" id="os6-uM-1l6"/>
                         <outlet property="categoryLabel" destination="L83-PC-VrC" id="ldR-9g-3wr"/>
                         <outlet property="dateLabel" destination="bxz-30-rno" id="etn-59-qz7"/>
-                        <outlet property="descriptionTextView" destination="D79-0w-GXc" id="vtc-3L-awh"/>
+                        <outlet property="descriptionTextView" destination="252-PU-Hbd" id="3aX-FQ-K1E"/>
                         <outlet property="latitudeLabel" destination="Hld-nE-iJ3" id="Ijg-vT-qMN"/>
                         <outlet property="longitudeLabel" destination="q3F-Ay-g0L" id="TDO-O0-uXs"/>
                     </connections>
@@ -293,6 +296,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LSf-hb-jMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1157" y="-308"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="2cl-7A-Vnx">
+            <objects>
+                <tableViewController id="DkT-g3-Ubw" customClass="CategoryPickerViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ef-je-AlE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="1Th-O3-J3h" style="IBUITableViewCellStyleDefault" id="fpN-gt-x5L">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpN-gt-x5L" id="Z1Q-Ps-ZZ2">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Th-O3-J3h">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wb9-cY-VXt" kind="unwind" identifier="PickedCategory" unwindAction="categoryPickerDidPickCategory:" id="QPx-sa-u1z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DkT-g3-Ubw" id="HR6-ez-9Qf"/>
+                            <outlet property="delegate" destination="DkT-g3-Ubw" id="UOa-hD-4Q1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Categories" id="EKs-EP-Lgh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyZ-uZ-Djj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wb9-cY-VXt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="-308"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Na-Fo-in0">

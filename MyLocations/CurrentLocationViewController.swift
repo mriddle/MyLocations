@@ -67,7 +67,11 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "TagLocation" {
       let navigationController = segue.destinationViewController as! UINavigationController
-      
+
+      let controller = navigationController.topViewController as! LocationDetailsViewController
+      print("Setting location info on controller \(controller)")
+      controller.coordinate = location!.coordinate
+      controller.placemark = placemark
     }
   }
 
@@ -219,7 +223,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
 
     geocoder.reverseGeocodeLocation(location, completionHandler: {
       placemarks, error in
-      print("Found \(placemarks), error: \(error)")
+
       self.lastGeocodingError = error
       if error == nil, let p = placemarks where !p.isEmpty {
         self.placemark = p.last!
