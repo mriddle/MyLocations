@@ -13,6 +13,8 @@
 		A86C8E741CDB10B400C4B814 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C8E721CDB10B400C4B814 /* Location.swift */; };
 		A86C8E761CDB274300C4B814 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C8E751CDB274300C4B814 /* LocationsViewController.swift */; };
 		A86C8E991CDC1A1700C4B814 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C8E981CDC1A1700C4B814 /* LocationCell.swift */; };
+		A86C8E9C1CDC44E600C4B814 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86C8E9B1CDC44E600C4B814 /* MapKit.framework */; };
+		A86C8E9E1CDC454400C4B814 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C8E9D1CDC454400C4B814 /* MapViewController.swift */; };
 		A8A22A3D1CD9D346008AB620 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A22A3C1CD9D346008AB620 /* LocationDetailsViewController.swift */; };
 		A8EA13461CD963410089EDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA13451CD963410089EDE7 /* AppDelegate.swift */; };
 		A8EA13481CD963410089EDE7 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA13471CD963410089EDE7 /* CurrentLocationViewController.swift */; };
@@ -30,6 +32,8 @@
 		A86C8E721CDB10B400C4B814 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A86C8E751CDB274300C4B814 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		A86C8E981CDC1A1700C4B814 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		A86C8E9B1CDC44E600C4B814 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A86C8E9D1CDC454400C4B814 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		A8A22A3C1CD9D346008AB620 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		A8EA13421CD963410089EDE7 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EA13451CD963410089EDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86C8E9C1CDC44E600C4B814 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,7 @@
 		A8EA13391CD963410089EDE7 = {
 			isa = PBXGroup;
 			children = (
+				A86C8E9B1CDC44E600C4B814 /* MapKit.framework */,
 				A86C8E711CDB10B400C4B814 /* Location+CoreDataProperties.swift */,
 				A86C8E721CDB10B400C4B814 /* Location.swift */,
 				A8EA13441CD963410089EDE7 /* MyLocations */,
@@ -88,6 +94,7 @@
 			children = (
 				A86C8E9A1CDC232400C4B814 /* Supporting Files */,
 				A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */,
+				A86C8E9D1CDC454400C4B814 /* MapViewController.swift */,
 				A8EA13471CD963410089EDE7 /* CurrentLocationViewController.swift */,
 				A86C8E6C1CDB0C1F00C4B814 /* Functions.swift */,
 				A8F17A641CDB006C00FE518E /* HudView.swift */,
@@ -177,6 +184,7 @@
 				A86C8E761CDB274300C4B814 /* LocationsViewController.swift in Sources */,
 				A8F17A651CDB006C00FE518E /* HudView.swift in Sources */,
 				A86C8E6D1CDB0C1F00C4B814 /* Functions.swift in Sources */,
+				A86C8E9E1CDC454400C4B814 /* MapViewController.swift in Sources */,
 				A86C8E731CDB10B400C4B814 /* Location+CoreDataProperties.swift in Sources */,
 				A8EA13461CD963410089EDE7 /* AppDelegate.swift in Sources */,
 				A8F17A631CDAD8BA00FE518E /* CategoryPickerViewController.swift in Sources */,
