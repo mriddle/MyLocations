@@ -46,9 +46,8 @@ class CategoryPickerViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    print("About to pick a cell")
+
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-    print("Getting category name")
     let categoryName = categories[indexPath.row]
     cell.textLabel!.text = categoryName
 

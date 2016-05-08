@@ -307,7 +307,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="1Th-O3-J3h" style="IBUITableViewCellStyleDefault" id="fpN-gt-x5L">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpN-gt-x5L" id="Z1Q-Ps-ZZ2">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -434,6 +434,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="tDF-cx-gxK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zWm-E5-yWp" id="vXi-4D-4MV"/>
+                                </connections>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" id="34h-7R-nhX">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -447,11 +450,14 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="User" id="zMV-eH-f4E">
                                             <connections>
-                                                <action selector="showUser:" destination="zWm-E5-yWp" id="KD8-h7-6sx"/>
+                                                <action selector="showUser" destination="zWm-E5-yWp" id="cY6-zg-Dzb"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
+                                <connections>
+                                    <outlet property="delegate" destination="zWm-E5-yWp" id="050-dp-WFf"/>
+                                </connections>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -459,11 +465,12 @@
                     <tabBarItem key="tabBarItem" title="Map" id="Fwt-9G-1CP"/>
                     <connections>
                         <outlet property="mapView" destination="tDF-cx-gxK" id="YEM-Oa-hm0"/>
+                        <segue destination="oUv-wA-ESU" kind="modal" identifier="EditLocation" id="o6V-h1-hM6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8c-19-wQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="978"/>
+            <point key="canvasLocation" x="640" y="906"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -490,6 +497,6 @@
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kg8-Ey-CI9"/>
+        <segue reference="o6V-h1-hM6"/>
     </inferredMetricsTieBreakers>
 </document>
