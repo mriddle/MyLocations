@@ -20,10 +20,14 @@
 		A8EA13481CD963410089EDE7 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA13471CD963410089EDE7 /* CurrentLocationViewController.swift */; };
 		A8EA134D1CD963410089EDE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EA134B1CD963410089EDE7 /* Main.storyboard */; };
 		A8EA134F1CD963410089EDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EA134E1CD963410089EDE7 /* Assets.xcassets */; };
-		A8EA13521CD963410089EDE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EA13501CD963410089EDE7 /* LaunchScreen.storyboard */; };
 		A8F17A631CDAD8BA00FE518E /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */; };
 		A8F17A651CDB006C00FE518E /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F17A641CDB006C00FE518E /* HudView.swift */; };
 		A8F26D071CE018E800EC1B73 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26D061CE018E800EC1B73 /* UIImage+Resize.swift */; };
+		A8F26D091CE01FD400EC1B73 /* String+AddText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26D081CE01FD400EC1B73 /* String+AddText.swift */; };
+		A8F26D0B1CE0253600EC1B73 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26D0A1CE0253600EC1B73 /* MyTabBarController.swift */; };
+		A8F26D0D1CE025B700EC1B73 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26D0C1CE025B700EC1B73 /* MyNavigationController.swift */; };
+		A8F26D0F1CE0265B00EC1B73 /* MyImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26D0E1CE0265B00EC1B73 /* MyImagePickerController.swift */; };
+		A8F26D1A1CE0782200EC1B73 /* Sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = A8F26D191CE0782200EC1B73 /* Sound.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +45,15 @@
 		A8EA13471CD963410089EDE7 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		A8EA134C1CD963410089EDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8EA134E1CD963410089EDE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A8EA13511CD963410089EDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8EA13531CD963410089EDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		A8F17A641CDB006C00FE518E /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		A8F26D061CE018E800EC1B73 /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		A8F26D081CE01FD400EC1B73 /* String+AddText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AddText.swift"; sourceTree = "<group>"; };
+		A8F26D0A1CE0253600EC1B73 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		A8F26D0C1CE025B700EC1B73 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		A8F26D0E1CE0265B00EC1B73 /* MyImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImagePickerController.swift; sourceTree = "<group>"; };
+		A8F26D191CE0782200EC1B73 /* Sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sound.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +75,6 @@
 				A8EA134E1CD963410089EDE7 /* Assets.xcassets */,
 				A86C8E6E1CDB0E5800C4B814 /* DataModel.xcdatamodeld */,
 				A8EA13531CD963410089EDE7 /* Info.plist */,
-				A8EA13501CD963410089EDE7 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 		A8EA13441CD963410089EDE7 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
+				A8F26D181CE0781B00EC1B73 /* Sound */,
 				A86C8E9A1CDC232400C4B814 /* Supporting Files */,
 				A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */,
 				A86C8E9D1CDC454400C4B814 /* MapViewController.swift */,
@@ -101,12 +109,24 @@
 				A86C8E6C1CDB0C1F00C4B814 /* Functions.swift */,
 				A8F17A641CDB006C00FE518E /* HudView.swift */,
 				A8A22A3C1CD9D346008AB620 /* LocationDetailsViewController.swift */,
+				A8F26D081CE01FD400EC1B73 /* String+AddText.swift */,
 				A86C8E981CDC1A1700C4B814 /* LocationCell.swift */,
 				A8F26D061CE018E800EC1B73 /* UIImage+Resize.swift */,
+				A8F26D0A1CE0253600EC1B73 /* MyTabBarController.swift */,
 				A86C8E751CDB274300C4B814 /* LocationsViewController.swift */,
 				A8EA134B1CD963410089EDE7 /* Main.storyboard */,
+				A8F26D0E1CE0265B00EC1B73 /* MyImagePickerController.swift */,
+				A8F26D0C1CE025B700EC1B73 /* MyNavigationController.swift */,
 			);
 			path = MyLocations;
+			sourceTree = "<group>";
+		};
+		A8F26D181CE0781B00EC1B73 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				A8F26D191CE0782200EC1B73 /* Sound.caf */,
+			);
+			name = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +187,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8EA13521CD963410089EDE7 /* LaunchScreen.storyboard in Resources */,
 				A8EA134F1CD963410089EDE7 /* Assets.xcassets in Resources */,
 				A8EA134D1CD963410089EDE7 /* Main.storyboard in Resources */,
+				A8F26D1A1CE0782200EC1B73 /* Sound.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A22A3D1CD9D346008AB620 /* LocationDetailsViewController.swift in Sources */,
+				A8F26D0D1CE025B700EC1B73 /* MyNavigationController.swift in Sources */,
 				A86C8E701CDB0E5800C4B814 /* DataModel.xcdatamodeld in Sources */,
+				A8F26D0F1CE0265B00EC1B73 /* MyImagePickerController.swift in Sources */,
 				A86C8E991CDC1A1700C4B814 /* LocationCell.swift in Sources */,
 				A86C8E741CDB10B400C4B814 /* Location.swift in Sources */,
 				A86C8E761CDB274300C4B814 /* LocationsViewController.swift in Sources */,
@@ -189,10 +211,12 @@
 				A8F17A651CDB006C00FE518E /* HudView.swift in Sources */,
 				A86C8E6D1CDB0C1F00C4B814 /* Functions.swift in Sources */,
 				A86C8E9E1CDC454400C4B814 /* MapViewController.swift in Sources */,
+				A8F26D091CE01FD400EC1B73 /* String+AddText.swift in Sources */,
 				A86C8E731CDB10B400C4B814 /* Location+CoreDataProperties.swift in Sources */,
 				A8EA13461CD963410089EDE7 /* AppDelegate.swift in Sources */,
 				A8F17A631CDAD8BA00FE518E /* CategoryPickerViewController.swift in Sources */,
 				A8EA13481CD963410089EDE7 /* CurrentLocationViewController.swift in Sources */,
+				A8F26D0B1CE0253600EC1B73 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,14 +229,6 @@
 				A8EA134C1CD963410089EDE7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A8EA13501CD963410089EDE7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8EA13511CD963410089EDE7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -305,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mriddle.MyLocations;
@@ -316,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mriddle.MyLocations;
