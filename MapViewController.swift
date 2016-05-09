@@ -144,3 +144,4 @@ extension MapViewController: UINavigationBarDelegate {
     return .TopAttached
   }
 }
+

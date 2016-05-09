@@ -23,6 +23,7 @@
 		A8EA13521CD963410089EDE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8EA13501CD963410089EDE7 /* LaunchScreen.storyboard */; };
 		A8F17A631CDAD8BA00FE518E /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */; };
 		A8F17A651CDB006C00FE518E /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F17A641CDB006C00FE518E /* HudView.swift */; };
+		A8F26D071CE018E800EC1B73 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26D061CE018E800EC1B73 /* UIImage+Resize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A8EA13531CD963410089EDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8F17A621CDAD8BA00FE518E /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		A8F17A641CDB006C00FE518E /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		A8F26D061CE018E800EC1B73 /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A8F17A641CDB006C00FE518E /* HudView.swift */,
 				A8A22A3C1CD9D346008AB620 /* LocationDetailsViewController.swift */,
 				A86C8E981CDC1A1700C4B814 /* LocationCell.swift */,
+				A8F26D061CE018E800EC1B73 /* UIImage+Resize.swift */,
 				A86C8E751CDB274300C4B814 /* LocationsViewController.swift */,
 				A8EA134B1CD963410089EDE7 /* Main.storyboard */,
 			);
@@ -182,6 +185,7 @@
 				A86C8E991CDC1A1700C4B814 /* LocationCell.swift in Sources */,
 				A86C8E741CDB10B400C4B814 /* Location.swift in Sources */,
 				A86C8E761CDB274300C4B814 /* LocationsViewController.swift in Sources */,
+				A8F26D071CE018E800EC1B73 /* UIImage+Resize.swift in Sources */,
 				A8F17A651CDB006C00FE518E /* HudView.swift in Sources */,
 				A86C8E6D1CDB0C1F00C4B814 /* Functions.swift in Sources */,
 				A86C8E9E1CDC454400C4B814 /* MapViewController.swift in Sources */,

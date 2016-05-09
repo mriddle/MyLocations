@@ -161,6 +161,10 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fDK-wm-I5T">
+                                                    <rect key="frame" x="23" y="-42" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -285,10 +289,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPhotoLabel" destination="CrB-mA-yVI" id="VZT-bm-A4V"/>
                         <outlet property="addressLabel" destination="zC7-wS-mAD" id="os6-uM-1l6"/>
                         <outlet property="categoryLabel" destination="L83-PC-VrC" id="ldR-9g-3wr"/>
                         <outlet property="dateLabel" destination="bxz-30-rno" id="etn-59-qz7"/>
                         <outlet property="descriptionTextView" destination="252-PU-Hbd" id="3aX-FQ-K1E"/>
+                        <outlet property="imageView" destination="fDK-wm-I5T" id="6Tx-x2-o6A"/>
                         <outlet property="latitudeLabel" destination="Hld-nE-iJ3" id="Ijg-vT-qMN"/>
                         <outlet property="longitudeLabel" destination="q3F-Ay-g0L" id="TDO-O0-uXs"/>
                     </connections>
@@ -307,7 +313,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="1Th-O3-J3h" style="IBUITableViewCellStyleDefault" id="fpN-gt-x5L">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpN-gt-x5L" id="Z1Q-Ps-ZZ2">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -373,24 +379,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zWB-hf-zbb">
-                                            <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                            <rect key="frame" x="82" y="8" width="238" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nhG-pZ-M6C">
-                                            <rect key="frame" x="8" y="27" width="304" height="21"/>
+                                            <rect key="frame" x="82" y="27" width="82" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.49655172413793103" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8Vt-F3-BZ6">
+                                            <rect key="frame" x="15" y="2" width="52" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="nhG-pZ-M6C" id="SNF-Ar-AOT"/>
                                     <outlet property="descriptionLabel" destination="zWB-hf-zbb" id="jul-ZL-HK3"/>
+                                    <outlet property="photoImageView" destination="8Vt-F3-BZ6" id="axE-63-VTb"/>
                                     <segue destination="oUv-wA-ESU" kind="modal" identifier="EditLocation" id="nfL-Jg-ZXJ"/>
                                 </connections>
                             </tableViewCell>
@@ -497,6 +508,6 @@
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="o6V-h1-hM6"/>
+        <segue reference="nfL-Jg-ZXJ"/>
     </inferredMetricsTieBreakers>
 </document>
